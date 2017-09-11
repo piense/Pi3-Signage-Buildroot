@@ -1,0 +1,6 @@
+#!/bin/ash
+
+chmod -R 744 /var/www
+chown -R www-data /var/www
+
+

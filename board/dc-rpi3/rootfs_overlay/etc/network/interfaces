@@ -1,0 +1,7 @@
+auto lo
+iface lo inet loopback
+
+source /mnt/data/config/interfaces
+
+
+

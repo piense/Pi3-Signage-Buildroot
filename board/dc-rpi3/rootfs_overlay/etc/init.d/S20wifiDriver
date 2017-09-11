@@ -1,0 +1,6 @@
+#!/bin/sh
+
+#TODO: figure out how to bake this in the kernel
+
+modprobe brcmfmac
+
