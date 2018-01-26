@@ -286,15 +286,13 @@ class Net_Wifi
     function scan($strInterface)
     {
         $arLines = array();
-        exec(
+        exec( 'sudo '.
             $this->arFileLocation['iwlist'] . ' '
             . escapeshellarg($strInterface) . ' scanning'
             . ' 2>&1',
             $arLines
         );
 
-		var_dump(    $arLines);
-		
         return $this->parseScan($arLines);
     }//function scan(..)
 

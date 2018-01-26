@@ -13,10 +13,14 @@ case "${2}" in
 
 # fixes rpi3 ttyAMA0 serial console
 dtoverlay=pi3-miniuart-bt
+
+disable_splash=1
 __EOF__
 	fi
 	;;
 esac
+
+cp "${BOARD_DIR}/cmdline.txt" "${BINARIES_DIR}/rpi-firmware/"
 
 # Mark the kernel as DT-enabled
 mkdir -p "${BINARIES_DIR}/kernel-marked"
